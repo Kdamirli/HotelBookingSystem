@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="addRoomDS" targetNamespace="http://tempuri.org/addRoomDS.xsd" xmlns:mstns="http://tempuri.org/addRoomDS.xsd" xmlns="http://tempuri.org/addRoomDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelBookingSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelBookingSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelBookingSystem.Properties.Settings.GlobalReference.Default.HotelBookingSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="addRoomViewTableAdapter" GeneratorDataComponentClassName="addRoomViewTableAdapter" Name="addRoomView" UserDataComponentName="addRoomViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.addRoomView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер комнаты], Отель, [Тип комнаты], [Цена за сутки] FROM dbo.addRoomView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Тип комнаты" DataSetColumn="Тип комнаты" />
+              <Mapping SourceColumn="Цена за сутки" DataSetColumn="Цена за сутки" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="addRoomDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="addRoomDS" msprop:Generator_DataSetName="addRoomDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="addRoomView" msprop:Generator_RowEvHandlerName="addRoomViewRowChangeEventHandler" msprop:Generator_RowDeletedName="addRoomViewRowDeleted" msprop:Generator_RowDeletingName="addRoomViewRowDeleting" msprop:Generator_RowEvArgName="addRoomViewRowChangeEvent" msprop:Generator_TablePropName="addRoomView" msprop:Generator_RowChangedName="addRoomViewRowChanged" msprop:Generator_RowChangingName="addRoomViewRowChanging" msprop:Generator_TableClassName="addRoomViewDataTable" msprop:Generator_RowClassName="addRoomViewRow" msprop:Generator_TableVarName="tableaddRoomView" msprop:Generator_UserTableName="addRoomView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты" msprop:Generator_UserColumnName="Номер комнаты" type="xs:int" />
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnVarNameInTable="columnОтель" msprop:Generator_UserColumnName="Отель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_комнаты" msprop:Generator_ColumnPropNameInRow="Тип_комнаты" msprop:Generator_ColumnPropNameInTable="Тип_комнатыColumn" msprop:Generator_ColumnVarNameInTable="columnТип_комнаты" msprop:Generator_UserColumnName="Тип комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена_x0020_за_x0020_сутки" msprop:Generator_ColumnPropNameInRow="Цена_за_сутки" msprop:Generator_ColumnPropNameInTable="Цена_за_суткиColumn" msprop:Generator_ColumnVarNameInTable="columnЦена_за_сутки" msprop:Generator_UserColumnName="Цена за сутки" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

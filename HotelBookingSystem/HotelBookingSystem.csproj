@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA902722-8B10-4627-85B8-8D1EC74674AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HotelBookingSystem</RootNamespace>
+    <AssemblyName>HotelBookingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCheckInDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addCheckInDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addHotelDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addHotelDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addLodgerDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addLodgerDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addRoomDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addRoomDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addRoomTypeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addRoomTypeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLog.Designer.cs">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReg.Designer.cs">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archiveCheckIn.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="checkIn.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hotel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="lodger.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MakeAChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeAChoice.Designer.cs">
+      <DependentUpon>MakeAChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="room.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="roomType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TurAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurAgentForm.Designer.cs">
+      <DependentUpon>TurAgentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurAgentLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurAgentLog.Designer.cs">
+      <DependentUpon>TurAgentLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurAgentReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurAgentReg.Designer.cs">
+      <DependentUpon>TurAgentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucBookRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucBookRoom.Designer.cs">
+      <DependentUpon>ucBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCCheckIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCCheckIn.Designer.cs">
+      <DependentUpon>UCCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCGetAvailableRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCGetAvailableRooms.Designer.cs">
+      <DependentUpon>UCGetAvailableRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCHotel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCHotel.Designer.cs">
+      <DependentUpon>UCHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCLodger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCLodger.Designer.cs">
+      <DependentUpon>UCLodger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCRoom.Designer.cs">
+      <DependentUpon>UCRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCRoomType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCRoomType.Designer.cs">
+      <DependentUpon>UCRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCupdate_room_prices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCupdate_room_prices.Designer.cs">
+      <DependentUpon>UCupdate_room_prices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="viewsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\UCAddCheckIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddCheckIn.Designer.cs">
+      <DependentUpon>UCAddCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddHotel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddHotel.Designer.cs">
+      <DependentUpon>UCAddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddLodger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddLodger.Designer.cs">
+      <DependentUpon>UCAddLodger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddRoom.Designer.cs">
+      <DependentUpon>UCAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddRoomType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddRoomType.Designer.cs">
+      <DependentUpon>UCAddRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCSearch.Designer.cs">
+      <DependentUpon>UCSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wordhelp.cs" />
+    <EmbeddedResource Include="AdminLog.resx">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReg.resx">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeAChoice.resx">
+      <DependentUpon>MakeAChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TurAgentForm.resx">
+      <DependentUpon>TurAgentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurAgentLog.resx">
+      <DependentUpon>TurAgentLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurAgentReg.resx">
+      <DependentUpon>TurAgentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddCheckIn.resx">
+      <DependentUpon>UCAddCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddHotel.resx">
+      <DependentUpon>UCAddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddLodger.resx">
+      <DependentUpon>UCAddLodger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddRoom.resx">
+      <DependentUpon>UCAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddRoomType.resx">
+      <DependentUpon>UCAddRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucBookRoom.resx">
+      <DependentUpon>ucBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCCheckIn.resx">
+      <DependentUpon>UCCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCGetAvailableRooms.resx">
+      <DependentUpon>UCGetAvailableRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCHotel.resx">
+      <DependentUpon>UCHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCLodger.resx">
+      <DependentUpon>UCLodger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCRoom.resx">
+      <DependentUpon>UCRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCRoomType.resx">
+      <DependentUpon>UCRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCSearch.resx">
+      <DependentUpon>UCSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCupdate_room_prices.resx">
+      <DependentUpon>UCupdate_room_prices.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="addCheckInDS.xsc">
+      <DependentUpon>addCheckInDS.xsd</DependentUpon>
+    </None>
+    <None Include="addCheckInDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addCheckInDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addCheckInDS.xss">
+      <DependentUpon>addCheckInDS.xsd</DependentUpon>
+    </None>
+    <None Include="addHotelDS.xsc">
+      <DependentUpon>addHotelDS.xsd</DependentUpon>
+    </None>
+    <None Include="addHotelDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addHotelDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addHotelDS.xss">
+      <DependentUpon>addHotelDS.xsd</DependentUpon>
+    </None>
+    <None Include="addLodgerDS.xsc">
+      <DependentUpon>addLodgerDS.xsd</DependentUpon>
+    </None>
+    <None Include="addLodgerDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addLodgerDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addLodgerDS.xss">
+      <DependentUpon>addLodgerDS.xsd</DependentUpon>
+    </None>
+    <None Include="addRoomDS.xsc">
+      <DependentUpon>addRoomDS.xsd</DependentUpon>
+    </None>
+    <None Include="addRoomDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addRoomDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addRoomDS.xss">
+      <DependentUpon>addRoomDS.xsd</DependentUpon>
+    </None>
+    <None Include="addRoomTypeDS.xsc">
+      <DependentUpon>addRoomTypeDS.xsd</DependentUpon>
+    </None>
+    <None Include="addRoomTypeDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addRoomTypeDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addRoomTypeDS.xss">
+      <DependentUpon>addRoomTypeDS.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="viewsDS.xsc">
+      <DependentUpon>viewsDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="viewsDS.xss">
+      <DependentUpon>viewsDS.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Отчет.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

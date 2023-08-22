@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="addRoomTypeDS" targetNamespace="http://tempuri.org/addRoomTypeDS.xsd" xmlns:mstns="http://tempuri.org/addRoomTypeDS.xsd" xmlns="http://tempuri.org/addRoomTypeDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelBookingSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelBookingSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelBookingSystem.Properties.Settings.GlobalReference.Default.HotelBookingSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="addRoomTypeViewTableAdapter" GeneratorDataComponentClassName="addRoomTypeViewTableAdapter" Name="addRoomTypeView" UserDataComponentName="addRoomTypeViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.addRoomTypeView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Тип, Описание FROM dbo.addRoomTypeView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Тип" DataSetColumn="Тип" />
+              <Mapping SourceColumn="Описание" DataSetColumn="Описание" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="addRoomTypeDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="addRoomTypeDS" msprop:Generator_DataSetName="addRoomTypeDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="addRoomTypeView" msprop:Generator_RowEvHandlerName="addRoomTypeViewRowChangeEventHandler" msprop:Generator_RowDeletedName="addRoomTypeViewRowDeleted" msprop:Generator_RowDeletingName="addRoomTypeViewRowDeleting" msprop:Generator_RowEvArgName="addRoomTypeViewRowChangeEvent" msprop:Generator_TablePropName="addRoomTypeView" msprop:Generator_RowChangedName="addRoomTypeViewRowChanged" msprop:Generator_RowChangingName="addRoomTypeViewRowChanging" msprop:Generator_TableClassName="addRoomTypeViewDataTable" msprop:Generator_RowClassName="addRoomTypeViewRow" msprop:Generator_TableVarName="tableaddRoomTypeView" msprop:Generator_UserTableName="addRoomTypeView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Тип" msprop:Generator_ColumnPropNameInRow="Тип" msprop:Generator_ColumnPropNameInTable="ТипColumn" msprop:Generator_ColumnVarNameInTable="columnТип" msprop:Generator_UserColumnName="Тип">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Описание" msprop:Generator_ColumnPropNameInRow="Описание" msprop:Generator_ColumnPropNameInTable="ОписаниеColumn" msprop:Generator_ColumnVarNameInTable="columnОписание" msprop:Generator_UserColumnName="Описание">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelBookingSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelBookingSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelBookingSystem.Properties.Settings.GlobalReference.Default.HotelBookingSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="agent_hotel_room_availabilityTableAdapter" GeneratorDataComponentClassName="agent_hotel_room_availabilityTableAdapter" Name="agent_hotel_room_availability" UserDataComponentName="agent_hotel_room_availabilityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.agent_hotel_room_availability" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, [Номер комнаты], [Тип комнаты], [Стоимость проживания] FROM dbo.agent_hotel_room_availability</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Тип комнаты" DataSetColumn="Тип комнаты" />
+              <Mapping SourceColumn="Стоимость проживания" DataSetColumn="Стоимость проживания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ownerIncomeTableAdapter" GeneratorDataComponentClassName="ownerIncomeTableAdapter" Name="ownerIncome" UserDataComponentName="ownerIncomeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.ownerIncome" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, [Общий приход] FROM dbo.ownerIncome</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Общий приход" DataSetColumn="Общий приход" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap1TableAdapter" GeneratorDataComponentClassName="zap1TableAdapter" Name="zap1" UserDataComponentName="zap1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер комнаты], Отель, [Тип комнаты], [Цена за сутки] FROM dbo.zap1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Тип комнаты" DataSetColumn="Тип комнаты" />
+              <Mapping SourceColumn="Цена за сутки" DataSetColumn="Цена за сутки" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap2TableAdapter" GeneratorDataComponentClassName="zap2TableAdapter" Name="zap2" UserDataComponentName="zap2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фио, [Номер комнаты], Отель, [Дата заезда], [Дата отъезда], [Общая стоимость проживания] FROM dbo.zap2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фио" DataSetColumn="Фио" />
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Дата заезда" DataSetColumn="Дата заезда" />
+              <Mapping SourceColumn="Дата отъезда" DataSetColumn="Дата отъезда" />
+              <Mapping SourceColumn="Общая стоимость проживания" DataSetColumn="Общая стоимость проживания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap3TableAdapter" GeneratorDataComponentClassName="zap3TableAdapter" Name="zap3" UserDataComponentName="zap3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap3" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Название отеля], [Средняя цена проживания] FROM dbo.zap3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Название отеля" DataSetColumn="Название отеля" />
+              <Mapping SourceColumn="Средняя цена проживания" DataSetColumn="Средняя цена проживания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap6TableAdapter" GeneratorDataComponentClassName="zap6TableAdapter" Name="zap6" UserDataComponentName="zap6TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap6" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, total_loss FROM dbo.zap6</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="total_loss" DataSetColumn="total_loss" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap5TableAdapter" GeneratorDataComponentClassName="zap5TableAdapter" Name="zap5" UserDataComponentName="zap5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap5" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, [Номер комнаты], [Тип комнаты], [Цена за сутки] FROM dbo.zap5</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Тип комнаты" DataSetColumn="Тип комнаты" />
+              <Mapping SourceColumn="Цена за сутки" DataSetColumn="Цена за сутки" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap7TableAdapter" GeneratorDataComponentClassName="zap7TableAdapter" Name="zap7" UserDataComponentName="zap7TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap7" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, [Количество комнат] FROM dbo.zap7</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Количество комнат" DataSetColumn="Количество комнат" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap4TableAdapter" GeneratorDataComponentClassName="zap4TableAdapter" Name="zap4" UserDataComponentName="zap4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.zap4" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отель, [Суточный доход] FROM dbo.zap4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Суточный доход" DataSetColumn="Суточный доход" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="search2TableAdapter" GeneratorDataComponentClassName="search2TableAdapter" Name="search2" UserDataComponentName="search2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelBookingSystemConnectionString (Settings)" DbObjectName="HotelBookingSystem.dbo.search2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ФИО, Адрес, Отель, [Номер комнаты], [Тип комнаты], [Дата заселения], [Дата выселения], [Общая стоимость] FROM dbo.search2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Отель" DataSetColumn="Отель" />
+              <Mapping SourceColumn="Номер комнаты" DataSetColumn="Номер комнаты" />
+              <Mapping SourceColumn="Тип комнаты" DataSetColumn="Тип комнаты" />
+              <Mapping SourceColumn="Дата заселения" DataSetColumn="Дата заселения" />
+              <Mapping SourceColumn="Дата выселения" DataSetColumn="Дата выселения" />
+              <Mapping SourceColumn="Общая стоимость" DataSetColumn="Общая стоимость" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="agent_hotel_room_availability" msprop:Generator_RowEvHandlerName="agent_hotel_room_availabilityRowChangeEventHandler" msprop:Generator_RowDeletedName="agent_hotel_room_availabilityRowDeleted" msprop:Generator_RowDeletingName="agent_hotel_room_availabilityRowDeleting" msprop:Generator_RowEvArgName="agent_hotel_room_availabilityRowChangeEvent" msprop:Generator_TablePropName="agent_hotel_room_availability" msprop:Generator_RowChangedName="agent_hotel_room_availabilityRowChanged" msprop:Generator_UserTableName="agent_hotel_room_availability" msprop:Generator_RowChangingName="agent_hotel_room_availabilityRowChanging" msprop:Generator_RowClassName="agent_hotel_room_availabilityRow" msprop:Generator_TableClassName="agent_hotel_room_availabilityDataTable" msprop:Generator_TableVarName="tableagent_hotel_room_availability">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_UserColumnName="Номер комнаты" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Тип_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Тип_комнаты" msprop:Generator_UserColumnName="Тип комнаты" msprop:Generator_ColumnVarNameInTable="columnТип_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стоимость_x0020_проживания" msprop:Generator_ColumnPropNameInTable="Стоимость_проживанияColumn" msprop:Generator_ColumnPropNameInRow="Стоимость_проживания" msprop:Generator_UserColumnName="Стоимость проживания" msprop:Generator_ColumnVarNameInTable="columnСтоимость_проживания" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ownerIncome" msprop:Generator_RowEvHandlerName="ownerIncomeRowChangeEventHandler" msprop:Generator_RowDeletedName="ownerIncomeRowDeleted" msprop:Generator_RowDeletingName="ownerIncomeRowDeleting" msprop:Generator_RowEvArgName="ownerIncomeRowChangeEvent" msprop:Generator_TablePropName="ownerIncome" msprop:Generator_RowChangedName="ownerIncomeRowChanged" msprop:Generator_UserTableName="ownerIncome" msprop:Generator_RowChangingName="ownerIncomeRowChanging" msprop:Generator_RowClassName="ownerIncomeRow" msprop:Generator_TableClassName="ownerIncomeDataTable" msprop:Generator_TableVarName="tableownerIncome">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Общий_x0020_приход" msprop:Generator_ColumnPropNameInTable="Общий_приходColumn" msprop:Generator_ColumnPropNameInRow="Общий_приход" msprop:Generator_UserColumnName="Общий приход" msprop:Generator_ColumnVarNameInTable="columnОбщий_приход" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap1" msprop:Generator_RowEvHandlerName="zap1RowChangeEventHandler" msprop:Generator_RowDeletedName="zap1RowDeleted" msprop:Generator_RowDeletingName="zap1RowDeleting" msprop:Generator_RowEvArgName="zap1RowChangeEvent" msprop:Generator_TablePropName="zap1" msprop:Generator_RowChangedName="zap1RowChanged" msprop:Generator_UserTableName="zap1" msprop:Generator_RowChangingName="zap1RowChanging" msprop:Generator_RowClassName="zap1Row" msprop:Generator_TableClassName="zap1DataTable" msprop:Generator_TableVarName="tablezap1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_UserColumnName="Номер комнаты" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Тип_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Тип_комнаты" msprop:Generator_UserColumnName="Тип комнаты" msprop:Generator_ColumnVarNameInTable="columnТип_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена_x0020_за_x0020_сутки" msprop:Generator_ColumnPropNameInTable="Цена_за_суткиColumn" msprop:Generator_ColumnPropNameInRow="Цена_за_сутки" msprop:Generator_UserColumnName="Цена за сутки" msprop:Generator_ColumnVarNameInTable="columnЦена_за_сутки" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap2" msprop:Generator_RowEvHandlerName="zap2RowChangeEventHandler" msprop:Generator_RowDeletedName="zap2RowDeleted" msprop:Generator_RowDeletingName="zap2RowDeleting" msprop:Generator_RowEvArgName="zap2RowChangeEvent" msprop:Generator_TablePropName="zap2" msprop:Generator_RowChangedName="zap2RowChanged" msprop:Generator_UserTableName="zap2" msprop:Generator_RowChangingName="zap2RowChanging" msprop:Generator_RowClassName="zap2Row" msprop:Generator_TableClassName="zap2DataTable" msprop:Generator_TableVarName="tablezap2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фио" msprop:Generator_ColumnPropNameInTable="ФиоColumn" msprop:Generator_ColumnPropNameInRow="Фио" msprop:Generator_UserColumnName="Фио" msprop:Generator_ColumnVarNameInTable="columnФио">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_UserColumnName="Номер комнаты" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_заезда" msprop:Generator_ColumnPropNameInTable="Дата_заездаColumn" msprop:Generator_ColumnPropNameInRow="Дата_заезда" msprop:Generator_UserColumnName="Дата заезда" msprop:Generator_ColumnVarNameInTable="columnДата_заезда" type="xs:dateTime" />
+              <xs:element name="Дата_x0020_отъезда" msprop:Generator_ColumnPropNameInTable="Дата_отъездаColumn" msprop:Generator_ColumnPropNameInRow="Дата_отъезда" msprop:Generator_UserColumnName="Дата отъезда" msprop:Generator_ColumnVarNameInTable="columnДата_отъезда" type="xs:dateTime" />
+              <xs:element name="Общая_x0020_стоимость_x0020_проживания" msprop:Generator_ColumnPropNameInTable="Общая_стоимость_проживанияColumn" msprop:Generator_ColumnPropNameInRow="Общая_стоимость_проживания" msprop:Generator_UserColumnName="Общая стоимость проживания" msprop:Generator_ColumnVarNameInTable="columnОбщая_стоимость_проживания" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap3" msprop:Generator_RowEvHandlerName="zap3RowChangeEventHandler" msprop:Generator_RowDeletedName="zap3RowDeleted" msprop:Generator_RowDeletingName="zap3RowDeleting" msprop:Generator_RowEvArgName="zap3RowChangeEvent" msprop:Generator_TablePropName="zap3" msprop:Generator_RowChangedName="zap3RowChanged" msprop:Generator_UserTableName="zap3" msprop:Generator_RowChangingName="zap3RowChanging" msprop:Generator_RowClassName="zap3Row" msprop:Generator_TableClassName="zap3DataTable" msprop:Generator_TableVarName="tablezap3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Название_x0020_отеля" msprop:Generator_ColumnPropNameInTable="Название_отеляColumn" msprop:Generator_ColumnPropNameInRow="Название_отеля" msprop:Generator_UserColumnName="Название отеля" msprop:Generator_ColumnVarNameInTable="columnНазвание_отеля">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Средняя_x0020_цена_x0020_проживания" msprop:Generator_ColumnPropNameInTable="Средняя_цена_проживанияColumn" msprop:Generator_ColumnPropNameInRow="Средняя_цена_проживания" msprop:Generator_UserColumnName="Средняя цена проживания" msprop:Generator_ColumnVarNameInTable="columnСредняя_цена_проживания" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap6" msprop:Generator_RowEvHandlerName="zap6RowChangeEventHandler" msprop:Generator_RowDeletedName="zap6RowDeleted" msprop:Generator_RowDeletingName="zap6RowDeleting" msprop:Generator_RowEvArgName="zap6RowChangeEvent" msprop:Generator_TablePropName="zap6" msprop:Generator_RowChangedName="zap6RowChanged" msprop:Generator_UserTableName="zap6" msprop:Generator_RowChangingName="zap6RowChanging" msprop:Generator_RowClassName="zap6Row" msprop:Generator_TableClassName="zap6DataTable" msprop:Generator_TableVarName="tablezap6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="total_loss" msprop:Generator_ColumnPropNameInTable="total_lossColumn" msprop:Generator_ColumnPropNameInRow="total_loss" msprop:Generator_UserColumnName="total_loss" msprop:Generator_ColumnVarNameInTable="columntotal_loss" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap5" msprop:Generator_RowEvHandlerName="zap5RowChangeEventHandler" msprop:Generator_RowDeletedName="zap5RowDeleted" msprop:Generator_RowDeletingName="zap5RowDeleting" msprop:Generator_RowEvArgName="zap5RowChangeEvent" msprop:Generator_TablePropName="zap5" msprop:Generator_RowChangedName="zap5RowChanged" msprop:Generator_UserTableName="zap5" msprop:Generator_RowChangingName="zap5RowChanging" msprop:Generator_RowClassName="zap5Row" msprop:Generator_TableClassName="zap5DataTable" msprop:Generator_TableVarName="tablezap5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_UserColumnName="Номер комнаты" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_комнаты" msprop:Generator_ColumnPropNameInTable="Тип_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Тип_комнаты" msprop:Generator_UserColumnName="Тип комнаты" msprop:Generator_ColumnVarNameInTable="columnТип_комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена_x0020_за_x0020_сутки" msprop:Generator_ColumnPropNameInTable="Цена_за_суткиColumn" msprop:Generator_ColumnPropNameInRow="Цена_за_сутки" msprop:Generator_UserColumnName="Цена за сутки" msprop:Generator_ColumnVarNameInTable="columnЦена_за_сутки" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap7" msprop:Generator_RowEvHandlerName="zap7RowChangeEventHandler" msprop:Generator_RowDeletedName="zap7RowDeleted" msprop:Generator_RowDeletingName="zap7RowDeleting" msprop:Generator_RowEvArgName="zap7RowChangeEvent" msprop:Generator_TablePropName="zap7" msprop:Generator_RowChangedName="zap7RowChanged" msprop:Generator_UserTableName="zap7" msprop:Generator_RowChangingName="zap7RowChanging" msprop:Generator_RowClassName="zap7Row" msprop:Generator_TableClassName="zap7DataTable" msprop:Generator_TableVarName="tablezap7">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Количество_x0020_комнат" msprop:Generator_ColumnPropNameInTable="Количество_комнатColumn" msprop:Generator_ColumnPropNameInRow="Количество_комнат" msprop:Generator_UserColumnName="Количество комнат" msprop:Generator_ColumnVarNameInTable="columnКоличество_комнат" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap4" msprop:Generator_RowClassName="zap4Row" msprop:Generator_RowEvHandlerName="zap4RowChangeEventHandler" msprop:Generator_RowDeletedName="zap4RowDeleted" msprop:Generator_RowDeletingName="zap4RowDeleting" msprop:Generator_RowEvArgName="zap4RowChangeEvent" msprop:Generator_TablePropName="zap4" msprop:Generator_RowChangedName="zap4RowChanged" msprop:Generator_UserTableName="zap4" msprop:Generator_RowChangingName="zap4RowChanging" msprop:Generator_TableClassName="zap4DataTable" msprop:Generator_TableVarName="tablezap4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отель" msprop:Generator_UserColumnName="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_ColumnVarNameInTable="columnОтель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Суточный_x0020_доход" msprop:Generator_UserColumnName="Суточный доход" msprop:Generator_ColumnPropNameInTable="Суточный_доходColumn" msprop:Generator_ColumnPropNameInRow="Суточный_доход" msprop:Generator_ColumnVarNameInTable="columnСуточный_доход" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="search2" msprop:Generator_RowEvHandlerName="search2RowChangeEventHandler" msprop:Generator_RowDeletedName="search2RowDeleted" msprop:Generator_RowDeletingName="search2RowDeleting" msprop:Generator_RowEvArgName="search2RowChangeEvent" msprop:Generator_TablePropName="search2" msprop:Generator_RowChangedName="search2RowChanged" msprop:Generator_RowChangingName="search2RowChanging" msprop:Generator_TableClassName="search2DataTable" msprop:Generator_RowClassName="search2Row" msprop:Generator_TableVarName="tablesearch2" msprop:Generator_UserTableName="search2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_UserColumnName="ФИО">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_ColumnVarNameInTable="columnАдрес" msprop:Generator_UserColumnName="Адрес">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отель" msprop:Generator_ColumnPropNameInRow="Отель" msprop:Generator_ColumnPropNameInTable="ОтельColumn" msprop:Generator_ColumnVarNameInTable="columnОтель" msprop:Generator_UserColumnName="Отель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_комнаты" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты" msprop:Generator_UserColumnName="Номер комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_комнаты" msprop:Generator_ColumnPropNameInRow="Тип_комнаты" msprop:Generator_ColumnPropNameInTable="Тип_комнатыColumn" msprop:Generator_ColumnVarNameInTable="columnТип_комнаты" msprop:Generator_UserColumnName="Тип комнаты">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_заселения" msprop:Generator_ColumnPropNameInRow="Дата_заселения" msprop:Generator_ColumnPropNameInTable="Дата_заселенияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_заселения" msprop:Generator_UserColumnName="Дата заселения" type="xs:dateTime" />
+              <xs:element name="Дата_x0020_выселения" msprop:Generator_ColumnPropNameInRow="Дата_выселения" msprop:Generator_ColumnPropNameInTable="Дата_выселенияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_выселения" msprop:Generator_UserColumnName="Дата выселения" type="xs:dateTime" />
+              <xs:element name="Общая_x0020_стоимость" msprop:Generator_ColumnPropNameInRow="Общая_стоимость" msprop:Generator_ColumnPropNameInTable="Общая_стоимостьColumn" msprop:Generator_ColumnVarNameInTable="columnОбщая_стоимость" msprop:Generator_UserColumnName="Общая стоимость" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
